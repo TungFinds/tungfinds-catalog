@@ -2453,7 +2453,7 @@
                                 <div class="flex items-center gap-1 text-amber-400 text-[11px] sm:text-xs font-bold">
                                     <i class="fa-solid fa-star"></i> <span>${product.score}</span>
                                 </div>
-                                <span class="text-[10px] text-[#a99282] hidden sm:inline">${product.views} vistas</span>
+                                <span class="text-[10px] text-[#a99282] flex items-center gap-1"><i class="fa-solid fa-eye text-[9px] text-accent"></i> ${product.views} vistas</span>
                             </div>
                             <h3 onclick="openProductDetail(${product.id})" class="font-bold text-xs sm:text-sm text-white hover:text-accent transition cursor-pointer line-clamp-2 mb-1.5 min-h-[2rem] sm:min-h-[2.5rem]" title="${product.name}">${product.name}</h3>
                             <div class="flex items-baseline gap-1">
@@ -2549,6 +2549,12 @@
                             </span>
                         </div>
                         <div class="p-3 sm:p-4">
+                            <div class="flex items-center justify-between mb-1">
+                                <div class="flex items-center gap-1 text-amber-400 text-[10px] sm:text-xs font-bold">
+                                    <i class="fa-solid fa-star"></i> <span>${rel.score}</span>
+                                </div>
+                                <span class="text-[10px] text-[#a99282] flex items-center gap-1"><i class="fa-solid fa-eye text-[9px] text-accent"></i> ${rel.views} vistas</span>
+                            </div>
                             <h4 class="font-bold text-xs text-white line-clamp-1 mb-1 group-hover:text-accent transition">${rel.name}</h4>
                             <span class="text-sm sm:text-base font-black text-accent">${formatPrice(rel.priceUSD)}</span>
                         </div>
